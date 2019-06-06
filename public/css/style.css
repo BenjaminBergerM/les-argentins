@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli-Bold.ttf") format('truetype');
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli-ExtraBold.ttf") format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli-ExtraLight.ttf") format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli-Light.ttf") format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli-Regular.ttf") format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NotoSans";
+    src: url("../fonts/NotoSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Muli;
+    font-weight: normal;
+}
+
+.hero, .about-us, .creativity, .project, .founders, .contact {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.project-banner {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 2.1rem;
+    font-weight: lighter;
+}
+
+h3>strong {
+    font-weight: bold;
+}
+
+h5>strong {
+    font-weight: bolder;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+p>strong {
+    font-weight: bold;
+}
+
+.text-black {
+    color: black;
+}
+
+.contact h6 {
+    margin-bottom: 2px;
+}
+
+.project .see-more img {
+    height: 40px;
+    width: 40px;
+}
+
+.project a:hover, .hero a:hover {
+    text-decoration: none;
+}
+
+.project .project-sidenav .content {
+    padding: 0px 55px 55px 55px;
+}
+
+.project .project-sidenav .content p {
+    font-size: .98rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.project .project-sidenav .content img {
+    width: 100%;
+    max-height: 140px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+  }
+  
+  .sidenav>a {
+    padding: 8px 8px 8px 55px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .sidenav a:hover {
+    font-weight: bold;
+    color: black;
+  }
+
+  .sidenav a:before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 1px solid black;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
