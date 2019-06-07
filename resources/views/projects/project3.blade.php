@@ -32,26 +32,16 @@
     </div>
 </section>
 <section class="mt-2 mt-sm-5">
-    <video style="width: 100%" controls>
-        <source src="{{ asset('videos/projects/1/02_VATTENFALL_30S_V2_Wip1.mp4') }}" type="video/mp4">
-    </video>
+    <img src="{{ asset('images/projects/3/project_img_1.png') }}" alt="" style="width: 100%">
 </section>
-<section class="row mt-2 mt-sm-5">
-    <article class="col-sm-6">
-        <video style="width: 100%" controls>
-            <source src="{{ asset('videos/projects/1/03_VATTENFALL_10S_BLE_Wip1.mp4') }}" type="video/mp4">
-        </video>
+<section class="row mt-2 mt-sm-5" style="max-height: 600px; overflow: hidden;">
+    <article class="col-sm-6 p-0">
+        <img src="{{ asset('images/projects/3/project_img_2.png') }}" alt="" style="width: 100%">
+        <img src="{{ asset('images/projects/3/project_img_4.png') }}" alt="" style="width: 100%">
     </article>
-    <article class="col-sm-6">
-        <video style="width: 100%" controls>
-            <source src="{{ asset('videos/projects/1/04_VATTENFALL_10S_CRU2.mp4') }}" type="video/mp4">
-        </video>
+    <article class="col-sm-6 p-0">
+        <img src="{{ asset('images/projects/3/project_img_3.png') }}" alt="" style="width: 100%">
     </article>
-</section>
-<section class="mt-2 mt-sm-5">
-    <video style="width: 100%" controls>
-        <source src="{{ asset('videos/projects/1/05_VATTENFALL_20S_DIGITAL_CHEVEUX_Wip1.mp4') }}" type="video/mp4">
-    </video>
 </section>
 
 @endsection

@@ -72,7 +72,7 @@
                         we love with Didier Barcelo of Henry thanks to a
                         great client: Olivier Antsett.</p>
                         <img class="mt-3" src="{{ asset('images/projects/1/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/1">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                             Luckily they agreed and S&M bunny was born.
                         </p>
                         <img class="mt-3" src="{{ asset('images/projects/2/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/2">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
                         <p class="mt-4">Sopexa is a French agency with over 20 offices worldwide that specializes in beverages, food & lifestyle. Their NY and Japan offices were invited to pitch for a campaign promoting Japanese Craft Beers in the US market from the ground up: concept, logo, key visuals, merchandising… the whole package. <br>
                             We decided to try and see what would happen if we represented the US craft beer culture and drinkers in traditional Japanese style, and invited them to drink in a new language.</p>
                         <img class="mt-3" src="{{ asset('images/projects/3/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/3">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                                 We got nerdy and asked ourselves: UFOs crash all the time, like cars, but… who tows and fixes them? 
                                 </p>
                         <img class="mt-3" src="{{ asset('images/projects/4/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/4">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                                 We found the idea, the artist Mambo, the production and post house WTF/ Chicle and put them together to show off the possibilities of this new phone.
                                 </p>
                         <img class="mt-3" src="{{ asset('images/projects/5/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/5">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                                 “Help me find something different” he says. We found the idea, the artist Mambo, the production and post house WTF/ Chicle and put them together to show off the possibilities of this new phone.
                                 </p>
                         <img class="mt-3" src="{{ asset('images/projects/6/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/6">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                                 This is what happened when Valerie Kalifa, marketing manager for Wix France called us on Olivier Altman’s recommendation.
                                 They had tapped Altmann&Pacreau for their TV campaign, but they were too busy and suggested Wix call us. The result is an incredibly international campaign: an idea for an Israeli company, that runs in France, shot in Argentina, created by an Argentine & Canadian team with music from a great Canadian studio.</p>
                         <img class="mt-3" src="{{ asset('images/projects/7/project_1.png') }}" alt="">
-                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                        <p class="mt-2"> <a class="text-black" href="/project/7">Click here</a> to see all TV spots and videos.</p>
                     </div>
                 </div>
             </div>
