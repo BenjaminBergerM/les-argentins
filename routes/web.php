@@ -12,6 +12,6 @@
 */
 
 Route::get('/', 'MainController@index')->name('index');
-Route::get('/project', 'MainController@show')->name('show');
+Route::get('/project/{id}', 'MainController@show')->name('show');
 
 Auth::routes();

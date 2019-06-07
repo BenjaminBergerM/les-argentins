@@ -7,12 +7,12 @@
     .creativity { background: url("{{ asset('images/home/background_3.png') }}") no-repeat center; }
     
     .project-1 { background: url("{{ asset('images/projects/1/img_1.png') }}") no-repeat center; }
-    .project-2 { background: url("{{ asset('images/projects/1/img_2.png') }}") no-repeat center; }
-    .project-3 { background: url("{{ asset('images/projects/1/img_3.png') }}") no-repeat center; }
-    .project-4 { background: url("{{ asset('images/projects/1/img_4.png') }}") no-repeat center; }
-    .project-5 { background: url("{{ asset('images/projects/1/img_5.png') }}") no-repeat center; }
-    .project-6 { background: url("{{ asset('images/projects/1/img_6.png') }}") no-repeat center; }
-    .project-7 { background: url("{{ asset('images/projects/1/img_7.png') }}") no-repeat center; }
+    .project-2 { background: url("{{ asset('images/projects/2/img_1.png') }}") no-repeat center; }
+    .project-3 { background: url("{{ asset('images/projects/3/img_1.png') }}") no-repeat center; }
+    .project-4 { background: url("{{ asset('images/projects/4/img_1.png') }}") no-repeat center; }
+    .project-5 { background: url("{{ asset('images/projects/5/img_1.png') }}") no-repeat center; }
+    .project-6 { background: url("{{ asset('images/projects/6/img_1.png') }}") no-repeat center; }
+    .project-7 { background: url("{{ asset('images/projects/7/img_1.png') }}") no-repeat center; }
     
     .founders { background: url("{{ asset('images/home/founders.png') }}") no-repeat center; }
     .contact { background: url("{{ asset('images/home/mapa.png') }}") no-repeat center; }
@@ -77,16 +77,143 @@
                 </div>
             </div>
         </article>
+        <article class="project project-2 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+            <div class="container">
+                <h3 class="text-white col-sm-5"><strong>For pharma companies</strong> looking to spice things up</h3>
+                <a href="javascript:void(0)" onclick="openProjectNav('2')" class="see-more d-flex flex-row align-items-center mt-4">
+                    <img src="{{ asset('images/icons/see-more.png') }}" alt="">
+                    <p class="ml-3 mb-0 text-white">See more</p>
+                </a>
+                <div id="sideNavProject2" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(2)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Reproquinol for Vetoquinol</strong><h5>
+                        <p class="mt-4">
+                            For those of us not in the agricultural field, animal reproduction is a given. But apparently this is not true… not even for rabbits. Vetoquinol, a French veterinary laboratory developed a line of products that can help and they asked us to find a way of making this known. We believe communicating a simple promise in an impactful way is always the best way to go. <br>
+                            Luckily they agreed and S&M bunny was born.
+                        </p>
+                        <img class="mt-3" src="{{ asset('images/projects/2/project_1.png') }}" alt="">
+                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project project-3 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+            <div class="container">
+                <h3 class="text-white col-sm-5"><strong>For countries</strong> trying to get other countries to drink their beer</h3>
+                <a href="javascript:void(0)" onclick="openProjectNav('3')" class="see-more d-flex flex-row align-items-center mt-4">
+                    <img src="{{ asset('images/icons/see-more.png') }}" alt="">
+                    <p class="ml-3 mb-0 text-white">See more</p>
+                </a>
+                <div id="sideNavProject3" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(3)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Japanese Craft Beer for Sopexa NY</strong><h5>
+                        <p class="mt-4">Sopexa is a French agency with over 20 offices worldwide that specializes in beverages, food & lifestyle. Their NY and Japan offices were invited to pitch for a campaign promoting Japanese Craft Beers in the US market from the ground up: concept, logo, key visuals, merchandising… the whole package. <br>
+                            We decided to try and see what would happen if we represented the US craft beer culture and drinkers in traditional Japanese style, and invited them to drink in a new language.</p>
+                        <img class="mt-3" src="{{ asset('images/projects/3/project_1.png') }}" alt="">
+                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project project-4 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+            <div class="container">
+                <h3 class="text-white col-sm-5"><strong>For in-house agencies</strong> looking for something that is out of this world</h3>
+                <a href="javascript:void(0)" onclick="openProjectNav('4')" class="see-more d-flex flex-row align-items-center mt-4">
+                    <img src="{{ asset('images/icons/see-more.png') }}" alt="">
+                    <p class="ml-3 mb-0 text-white">See more</p>
+                </a>
+                <div id="sideNavProject4" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(4)">&times;</a>
+                    <div class="content">
+                        <h5><strong>X-Files for Fox Latin America</strong><h5>
+                        <p class="mt-4">André Takeda, VP Creative Services of FOX Latin America has terrific inhouse teams, but sometimes he invites others to collaborate.
+                                He asked us to give him a hand in creating buzz around the new X-Files season (Season 10), something that would happen off screen and could amplify in social media to drive viewership of the season premiere. <br>
+                                We got nerdy and asked ourselves: UFOs crash all the time, like cars, but… who tows and fixes them? 
+                                </p>
+                        <img class="mt-3" src="{{ asset('images/projects/4/project_1.png') }}" alt="">
+                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
+        <article class="project project-5 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+            <div class="container">
+                <h3 class="text-white col-sm-5"><strong>For guys</strong> running for President</h3>
+                <a href="javascript:void(0)" onclick="openProjectNav('5')" class="see-more d-flex flex-row align-items-center mt-4">
+                    <img src="{{ asset('images/icons/see-more.png') }}" alt="">
+                    <p class="ml-3 mb-0 text-white">See more</p>
+                </a>
+                <div id="sideNavProject5" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(5)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Binner 2015 Campaign</strong><h5>
+                        <p class="mt-4">Bruno Moreira, CD at Cheil Paris called us because he needed a viral video to launch the latest Galaxy phone. A product which is great but not significantly different, loaded with features like predictive text and a stylus.
+                                “Help me find something different” he says. <br>
+                                We found the idea, the artist Mambo, the production and post house WTF/ Chicle and put them together to show off the possibilities of this new phone.
+                                </p>
+                        <img class="mt-3" src="{{ asset('images/projects/5/project_1.png') }}" alt="">
+                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="project project-6 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+            <div class="container">
+                <h3 class="text-white col-sm-5"><strong>For products</strong> that need a bitchin’ demo</h3>
+                <a href="javascript:void(0)" onclick="openProjectNav('6')" class="see-more d-flex flex-row align-items-center mt-4">
+                    <img src="{{ asset('images/icons/see-more.png') }}" alt="">
+                    <p class="ml-3 mb-0 text-white">See more</p>
+                </a>
+                <div id="sideNavProject6" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(6)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Samsung for Cheil</strong><h5>
+                        <p class="mt-4">Bruno Moreira, CD at Cheil Paris called us because he needed a viral video to launch the latest Galaxy phone. A product which is great but not significantly different, loaded with features like predictive text and a stylus. <br>
+                                “Help me find something different” he says. We found the idea, the artist Mambo, the production and post house WTF/ Chicle and put them together to show off the possibilities of this new phone.
+                                </p>
+                        <img class="mt-3" src="{{ asset('images/projects/6/project_1.png') }}" alt="">
+                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project project-7 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+            <div class="container">
+                <h3 class="text-white col-sm-5"><strong>For a startup</strong> that needs to be tuned into France</h3>
+                <a href="javascript:void(0)" onclick="openProjectNav('7')" class="see-more d-flex flex-row align-items-center mt-4">
+                    <img src="{{ asset('images/icons/see-more.png') }}" alt="">
+                    <p class="ml-3 mb-0 text-white">See more</p>
+                </a>
+                <div id="sideNavProject7" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(7)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Wix France</strong><h5>
+                        <p class="mt-4">Nothing is nicer than being recommended by a client.
+                                This is what happened when Valerie Kalifa, marketing manager for Wix France called us on Olivier Altman’s recommendation.
+                                They had tapped Altmann&Pacreau for their TV campaign, but they were too busy and suggested Wix call us. The result is an incredibly international campaign: an idea for an Israeli company, that runs in France, shot in Argentina, created by an Argentine & Canadian team with music from a great Canadian studio.</p>
+                        <img class="mt-3" src="{{ asset('images/projects/7/project_1.png') }}" alt="">
+                        <p class="mt-2"> <a class="text-black" href="/project">Click here</a> to see all TV spots and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        
     </section>
     <section class="founders d-flex flex-row align-items-center" id="founders">
-        <div class="container">
-            {{-- <article>
-                <img src="{{ asset('images/home/founders/founder_1.png') }}" alt="">
+        <div class="container d-flex flex-sm-row flex-column align-items-center">
+            <article class="mr-sm-5 mb-5 mb-sm-0 d-flex flex-column align-items-center">
+                <img width="225px" src="{{ asset('images/home/founders/founder_1.png') }}" alt="">
+                <h5 class="mt-2">Didier Zakine</h5>
             </article>
-            <article>
-                <img src="{{ asset('images/home/founders/founder_2.png') }}" alt="">
-            </article> --}}
+            <article class="d-flex flex-column align-items-center">
+                <img width="225px" src="{{ asset('images/home/founders/founder_2.png') }}" alt="">
+                <h5 class="mt-2">Didier Zakine</h5>
+            </article>
         </div>
     </section>
     <section class="contact pt-5" id="contact">

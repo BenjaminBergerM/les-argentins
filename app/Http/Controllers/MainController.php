@@ -11,8 +11,8 @@ class MainController extends Controller
         return view('home');
     }
 
-    public function show() 
+    public function show($id) 
     {
-        return view('project');
+        return view('projects.project'.$id);
     }
 }

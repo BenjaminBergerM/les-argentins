@@ -51,6 +51,11 @@ body {
     background-size: cover;
 }
 
+.founders h5 {
+    color: #FFB600;
+    font-weight: bold;
+}
+
 h3 {
     font-size: 2.1rem;
     font-weight: lighter;
@@ -91,7 +96,7 @@ p>strong {
 }
 
 .project .project-sidenav .content {
-    padding: 0px 55px 55px 55px;
+    padding: 0px 55px 0px 55px;
 }
 
 .project .project-sidenav .content p {
@@ -103,6 +108,7 @@ p>strong {
 .project .project-sidenav .content img {
     width: 100%;
     max-height: 140px;
+    object-fit: cover
 }
 
 .nav-link {
@@ -119,7 +125,7 @@ p>strong {
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 100px;
+    padding-top: 80px;
   }
   
   .sidenav>a {
