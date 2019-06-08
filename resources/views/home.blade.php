@@ -36,13 +36,17 @@
     </section>
     <section id="about-us" class="about-us d-flex flex-comlumn align-items-end pb-2">
         <div class="container pb-5 text-center text-sm-left">
-            <h3 class="text-white mb-2 col-sm-5"><strong>Lots has changed since
+            <h3 class="text-white mb-2 col-sm-5 px-0"><strong>Lots has changed since
                 we started 10 years ago:</strong></h3>
-            <p class="text-white col-sm-5">Social media is now the <strong>biggest media</strong>, consultants are
+            <p class="text-white col-sm-5 px-0">Social media is now the <strong>biggest media</strong>, consultants are
                 becoming agency holdings and data the big star.
                 So after ten years as the ad agency that works for ad
                 agencies, <strong>we think it’s time for a change.</strong></p>
         </div>
+        <a href="#creativity" class="d-inline-flex flex-column align-items-center" style="position:absolute;left:50%;margin-left: -13px;">
+            <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+            <p class="text-white mt-1" style="font-size: 10px;">Scroll</p>
+        </a>
     </section>
     <section class="creativity d-flex flex-comlumn align-items-end justify-content-center" id="creativity">
         <a href="#project-1" class="d-inline-flex flex-column align-items-center">
@@ -50,9 +54,9 @@
             <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
         </a>
     </section>
-    <section id="project-1">
+    <section>
 
-        <article class="project project-1 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-1 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" style="position:relative;" id="project-1">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For PR agencies</strong> that get asked to launch a big player in the energy market</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('1')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -76,8 +80,12 @@
                     </div>
                 </div>
             </div>
+            <a href="#project-2" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
-        <article class="project project-2 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-2 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-2">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For pharma companies</strong> looking to spice things up</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('2')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -97,8 +105,12 @@
                     </div>
                 </div>
             </div>
+            <a href="#project-3" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
-        <article class="project project-3 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-3 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-3">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For countries</strong> trying to get other countries to drink their beer</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('3')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -116,8 +128,12 @@
                     </div>
                 </div>
             </div>
+            <a href="#project-4" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
-        <article class="project project-4 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-4 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-4">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For in-house agencies</strong> looking for something that is out of this world</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('4')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -137,9 +153,13 @@
                     </div>
                 </div>
             </div>
+            <a href="#project-5" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
 
-        <article class="project project-5 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-5 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-5">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For guys</strong> running for President</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('5')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -159,9 +179,13 @@
                     </div>
                 </div>
             </div>
+            <a href="#project-6" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
 
-        <article class="project project-6 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-6 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-6">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For products</strong> that need a bitchin’ demo</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('6')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -180,8 +204,12 @@
                     </div>
                 </div>
             </div>
+            <a href="#project-7" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
-        <article class="project project-7 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0">
+        <article class="project project-7 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-7">
             <div class="container">
                 <h3 class="text-white col-sm-5"><strong>For a startup</strong> that needs to be tuned into France</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('7')" class="see-more d-flex flex-row align-items-center mt-4">
@@ -200,6 +228,10 @@
                     </div>
                 </div>
             </div>
+            <a href="#founders" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+            </a>
         </article>
 
         
@@ -207,46 +239,39 @@
     <section class="founders d-flex flex-row align-items-center" id="founders">
         <div class="container d-flex flex-sm-row flex-column align-items-center">
             <article class="mr-sm-5 mb-5 mb-sm-0">
-                <a href="" class="d-flex flex-column align-items-center">
-                    <img width="225px" src="{{ asset('images/home/founders/founder_1.png') }}" alt="">
+                <a href="javascript:void(0)" onclick="openProjectNav('Founder1')" class="d-flex flex-column align-items-center founder">
+                    <img width="225px" src="{{ asset('images/home/founders/founder_1.png') }}" class="founder-img" alt="">
                     <h5 class="mt-2">Didier Zakine</h5>
                 </a>
-                <div id="sideNavProject1" class="sidenav project-sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(1)">&times;</a>
+                <div id="sideNavProjectFounder1" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav('Founder1')">&times;</a>
                     <div class="content">
-                        <h5><strong>Vattenfall for Scenarii</strong><h5>
-                        <p class="mt-4">We received a call one day from Caroline Escande,
-                        the brilliant planner at a Scenarii, a PR agency in
-                        Paris. Would we would be interested in pitching for
-                        the French launch of Vattenfall, Sweden’s leading
-                        energy company?
-                        We pitched, we won and we produced a campaign
-                        we love with Didier Barcelo of Henry thanks to a
-                        great client: Olivier Antsett.</p>
+                        <h5><strong>Didier Zakine</strong><h5>
+                        <p class="mt-4">Didier a fait ses classes en France, dans les rangs du groupe L'Oréal au sein des services marketing de Gemey Maybeline puis Elseve.
+                                Il rejoint le Groupe Publicis puis l’agence française Venise en tant que Directeur Commercial. Au fil des années, il a accompagné des annonceurs tels que L'Oréal, Givenchy, Kodak et Iams Eukanuba. Il débarque avec sa famille en Argentine début 2008, le temps d'un MBA avant de créer Les Argentins. Il est marié à Jessica - Architecte- et ont trois enfants de 11, 9 et 2 ans, Even, Eléa et Amos. En 2011, ils décident de rentrer en France pour se rapprocher de leurs proches et pour asseoir le développement de Les Argentins en Europe.
+                                </p>
                     </div>
                 </div>
             </article>
             <article class="d-flex flex-column align-items-center">
-                <a href="" class="d-flex flex-column align-items-center">
-                    <img width="225px" src="{{ asset('images/home/founders/founder_2.png') }}" alt="">
-                    <h5 class="mt-2">Didier Zakine</h5>
+                <a href="javascript:void(0)" onclick="openProjectNav('Founder2')" class="d-flex flex-column align-items-center founder">
+                    <img width="225px" src="{{ asset('images/home/founders/founder_2.png') }}" class="founder-img" alt="">
+                    <h5 class="mt-2">Mariano Favetto</h5>
                 </a>
-                <div id="sideNavProject1" class="sidenav project-sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(1)">&times;</a>
+                <div id="sideNavProjectFounder2" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav('Founder2')">&times;</a>
                     <div class="content">
-                        <h5><strong>Vattenfall for Scenarii</strong><h5>
-                        <p class="mt-4">We received a call one day from Caroline Escande,
-                        the brilliant planner at a Scenarii, a PR agency in
-                        Paris. Would we would be interested in pitching for
-                        the French launch of Vattenfall, Sweden’s leading
-                        energy company?
-                        We pitched, we won and we produced a campaign
-                        we love with Didier Barcelo of Henry thanks to a
-                        great client: Olivier Antsett.</p>
+                        <h5><strong>Mariano Favetto</strong><h5>
+                        <p class="mt-4">Mariano débute sa carrière dans l'agence argentine la plus créative de son époque avant d'entamer un tour du monde pour le compte de l’agence Saatchi & Saatchi du Groupe Publicis. Il occupera le poste de Directeur de la Création des filiales de New York, Toronto, Sydney et Paris où il signera les campagnes Toyota, Sony et Procter & Gamble. Ses films, vus dans le monde entier, ont été plusieurs fois primés dans les meilleurs festivals de publicité. Il fonde avec Didier Les Argentins où il occupe le rôle de Directeur de la Création. Il est aussi marié à une Jessica - Publicitaire - et ont deux enfants de 18 et 15 ans, Lucca et Massimo.
+                            </p>
                     </div>
                 </div>
             </article>
         </div>
+        <a href="#contact" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
+            <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+            <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
+        </a>
     </section>
     <section class="contact pt-5" id="contact">
         <div class="container pt-5 pt-sm-4">
@@ -264,18 +289,18 @@
                 <img src="{{ asset('images/icons/yellow-dot.png') }}" alt="" width="28px" height="28px">
                 <div class="d-flex flex-column ml-4">
                     <h5 class="mb-2"><strong>North America</strong></h5>
-                    <h6>Vincent Doye</h6>
-                    <h6><a class="text-black" href="mailto:vincent@lesargentins.com">vincent@lesargentins.com</a></h6>
-                    <h6><a class="text-black" href="tel:+33 6 83 69 84 36">+33 6 83 69 84 36</a></h6>
+                    <h6>Liz Marks</h6>
+                    <h6><a class="text-black" href="mailto:liz@lesargentins.com">liz@lesargentins.com</a></h6>
+                    <h6><a class="text-black" href="tel:+1 646 634 1619">+1 646 634 1619</a></h6>
                 </div>        
             </article>
             <article class="d-flex flex-row mb-4 mb-sm-3">
                 <img src="{{ asset('images/icons/red-dot.png') }}" alt="" width="28px" height="28px">
                 <div class="d-flex flex-column ml-4">
                     <h5 class="mb-2"><strong>Latin America & Caribbean</strong></h5>
-                    <h6>Vincent Doye</h6>
-                    <h6><a class="text-black" href="mailto:vincent@lesargentins.com">vincent@lesargentins.com</a></h6>
-                    <h6><a class="text-black" href="tel:+33 6 83 69 84 36">+33 6 83 69 84 36</a></h6>
+                    <h6>Helios Garnier</h6>
+                    <h6><a class="text-black" href="mailto:helios@lesargentins.com">helios@lesargentins.com</a></h6>
+                    <h6><a class="text-black" href="tel:+54 911 2454 4385">+54 911 2454 4385</a></h6>
                 </div>
                 
             </article>
@@ -283,9 +308,9 @@
                 <img src="{{ asset('images/icons/black-dot.png') }}" alt="" width="28px" height="28px">
                 <div class="d-flex flex-column ml-4">
                     <h5 class="mb-2"><strong>Rest of the World</strong></h5>
-                    <h6>Vincent Doye</h6>
-                    <h6><a class="text-black" href="mailto:vincent@lesargentins.com">vincent@lesargentins.com</a></h6>
-                    <h6><a class="text-black" href="tel:+33 6 83 69 84 36">+33 6 83 69 84 36</a></h6>
+                    <h6>Didier Zakine</h6>
+                    <h6><a class="text-black" href="mailto:didier@lesargentins.com">didier@lesargentins.com</a></h6>
+                    <h6><a class="text-black" href="tel:+ 33 6 09 05 34 52">+ 33 6 09 05 34 52</a></h6>
                 </div>
             </article>
         </div>

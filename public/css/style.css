@@ -43,6 +43,7 @@ body {
     height: 100vh;
     width: 100%;
     background-size: cover;
+    position: relative;
 }
 
 .project-banner {
@@ -51,7 +52,7 @@ body {
     background-size: cover;
 }
 
-.founders h5 {
+.founders .founder h5 {
     color: #FFB600;
     font-weight: bold;
 }
@@ -95,11 +96,11 @@ a:hover {
     text-decoration: none;
 }
 
-.project .project-sidenav .content {
+.project .project-sidenav .content, .founders .project-sidenav .content {
     padding: 0px 55px 0px 55px;
 }
 
-.project .project-sidenav .content p {
+.project .project-sidenav .content p, .founders .project-sidenav .content p {
     font-size: .98rem;
     line-height: 1.6;
     color: black;
@@ -168,7 +169,10 @@ a:hover {
 @media only screen and (max-width: 576px) {
     h3 { font-size: 1.5rem !important; }
     p { font-size: 0.9rem !important; }
-    .founders img {
+    .founders .founder-img {
         width: 170px;
+    }
+    .project .project-sidenav .content {
+        padding: 0px 20px 0px 20px;
     }
 }
