@@ -91,7 +91,7 @@ p>strong {
     width: 40px;
 }
 
-.project a:hover, .hero a:hover {
+a:hover {
     text-decoration: none;
 }
 
@@ -161,7 +161,14 @@ p>strong {
     margin-left: 50px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+@media screen and (max-height: 450px) {
+    .sidenav { padding-top: 15px; }
+    .sidenav a { font-size: 18px; }
+}
+@media only screen and (max-width: 576px) {
+    h3 { font-size: 1.5rem !important; }
+    p { font-size: 0.9rem !important; }
+    .founders img {
+        width: 170px;
+    }
+}

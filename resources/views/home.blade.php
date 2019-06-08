@@ -206,13 +206,45 @@
     </section>
     <section class="founders d-flex flex-row align-items-center" id="founders">
         <div class="container d-flex flex-sm-row flex-column align-items-center">
-            <article class="mr-sm-5 mb-5 mb-sm-0 d-flex flex-column align-items-center">
-                <img width="225px" src="{{ asset('images/home/founders/founder_1.png') }}" alt="">
-                <h5 class="mt-2">Didier Zakine</h5>
+            <article class="mr-sm-5 mb-5 mb-sm-0">
+                <a href="" class="d-flex flex-column align-items-center">
+                    <img width="225px" src="{{ asset('images/home/founders/founder_1.png') }}" alt="">
+                    <h5 class="mt-2">Didier Zakine</h5>
+                </a>
+                <div id="sideNavProject1" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(1)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Vattenfall for Scenarii</strong><h5>
+                        <p class="mt-4">We received a call one day from Caroline Escande,
+                        the brilliant planner at a Scenarii, a PR agency in
+                        Paris. Would we would be interested in pitching for
+                        the French launch of Vattenfall, Sweden’s leading
+                        energy company?
+                        We pitched, we won and we produced a campaign
+                        we love with Didier Barcelo of Henry thanks to a
+                        great client: Olivier Antsett.</p>
+                    </div>
+                </div>
             </article>
             <article class="d-flex flex-column align-items-center">
-                <img width="225px" src="{{ asset('images/home/founders/founder_2.png') }}" alt="">
-                <h5 class="mt-2">Didier Zakine</h5>
+                <a href="" class="d-flex flex-column align-items-center">
+                    <img width="225px" src="{{ asset('images/home/founders/founder_2.png') }}" alt="">
+                    <h5 class="mt-2">Didier Zakine</h5>
+                </a>
+                <div id="sideNavProject1" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav(1)">&times;</a>
+                    <div class="content">
+                        <h5><strong>Vattenfall for Scenarii</strong><h5>
+                        <p class="mt-4">We received a call one day from Caroline Escande,
+                        the brilliant planner at a Scenarii, a PR agency in
+                        Paris. Would we would be interested in pitching for
+                        the French launch of Vattenfall, Sweden’s leading
+                        energy company?
+                        We pitched, we won and we produced a campaign
+                        we love with Didier Barcelo of Henry thanks to a
+                        great client: Olivier Antsett.</p>
+                    </div>
+                </div>
             </article>
         </div>
     </section>
