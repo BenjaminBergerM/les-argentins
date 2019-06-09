@@ -4,7 +4,7 @@
 <style>
 
 .project-banner { background: url("{{ asset('images/projects/7/project_background.png') }}") no-repeat center; }
-.body { overflow: hidden; }
+body { overflow-x: hidden; }
 
 </style>
 @endsection

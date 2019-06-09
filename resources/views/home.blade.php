@@ -43,14 +43,14 @@
                 So after ten years as the ad agency that works for ad
                 agencies, <strong>we think it’s time for a change.</strong></p>
         </div>
-        <a href="#creativity" class="d-inline-flex flex-column align-items-center" style="position:absolute;left:50%;margin-left: -13px;">
-            <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+        <a href="#creativity" class="d-inline-flex flex-column align-items-center" style="position:absolute;left:50%;margin-left: -13px;margin-top: 10px;">
+            <div style="height: 22px; width: 1px; background: #fff;"></div>
             <p class="text-white mt-1" style="font-size: 10px;">Scroll</p>
         </a>
     </section>
     <section class="creativity d-flex flex-comlumn align-items-end justify-content-center" id="creativity">
         <a href="#project-1" class="d-inline-flex flex-column align-items-center">
-            <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
+            <div style="height: 22px; width: 1px; background: #000;"></div>
             <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
         </a>
     </section>
@@ -80,10 +80,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#project-2" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
         </article>
         <article class="project project-2 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-2">
             <div class="container">
@@ -105,10 +101,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#project-3" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
         </article>
         <article class="project project-3 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-3">
             <div class="container">
@@ -128,10 +120,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#project-4" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
         </article>
         <article class="project project-4 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-4">
             <div class="container">
@@ -153,10 +141,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#project-5" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
         </article>
 
         <article class="project project-5 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-5">
@@ -179,10 +163,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#project-6" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
         </article>
 
         <article class="project project-6 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-6">
@@ -204,10 +184,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#project-7" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
         </article>
         <article class="project project-7 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-7">
             <div class="container">
@@ -228,13 +204,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#founders" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-                <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-                <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-            </a>
-        </article>
-
-        
+        </article>        
     </section>
     <section class="founders d-flex flex-row align-items-center" id="founders">
         <div class="container d-flex flex-sm-row flex-column align-items-center">
@@ -268,10 +238,6 @@
                 </div>
             </article>
         </div>
-        <a href="#contact" class="d-inline-flex flex-column align-items-center align-items-end" style="position: absolute;left: 50%;bottom: 0px;margin-left: -13px;">
-            <img src="{{ asset('images/icons/scroll.png') }}" height="22px">
-            <p class="text-black mt-1" style="font-size: 10px;">Scroll</p>
-        </a>
     </section>
     <section class="contact pt-5" id="contact">
         <div class="container pt-5 pt-sm-4">
