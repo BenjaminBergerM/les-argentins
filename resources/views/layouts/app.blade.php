@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand fixed-top bg-transparent container mt-4" style="position: absolute;">
             <a href="/"><img src="{{ asset('images/logo.png') }}" alt="" height="64px"></a>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                {{-- <li class="nav-item active">
                     <a class="nav-link" href="#">ES</a>
                 </li>
                 <li class="nav-item">
@@ -31,7 +31,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">EN</a>
-                </li>
+                </li> --}}
                 <li>
                     <a class="nav-link" onclick="openNav()" href="#">☰</a>
                 </li>

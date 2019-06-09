@@ -161,6 +161,14 @@ a:hover {
     font-size: 36px;
     margin-left: 50px;
   }
+
+  .porject-box-1 h1 {
+    font-size: 2rem;
+  }
+
+  .porject-box-1 h4 {
+      font-size: 1.3rem;
+  }
   
 @media screen and (max-height: 450px) {
     .sidenav { padding-top: 15px; }

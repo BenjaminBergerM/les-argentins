@@ -13,7 +13,7 @@
 <section class="project-banner">
 
 </section>
-<section class="mt-2 mt-sm-5 container">
+<section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
         <h1 class="col-12 mb-4">Wix France</h1>
         <article class="col-sm-6">

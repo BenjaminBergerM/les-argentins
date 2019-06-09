@@ -14,4 +14,28 @@
 Route::get('/', 'MainController@index')->name('index');
 Route::get('/project/{id}', 'MainController@show')->name('show');
 
-Auth::routes();
+Route::prefix('backoffice')->group(function() {
+    
+    // Backoffce 
+    Route::middleware('auth')->group(function() {
+        Route::get('/', 'Backoffice\BackofficeController@index');
+
+        Route::prefix('projects')->name('backoffice.projects.')->group(function() {
+            Route::get('/', 'Backoffice\ProjectsController@index')->name('index');
+            Route::get('/create', 'Backoffice\ProjectsController@create')->name('create');
+            Route::post('/', 'Backoffice\ProjectsController@store')->name('store');
+        });
+
+    });
+
+    // Auth
+    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login')->middleware(['web','guest']);
+    Route::post('login', 'Auth\LoginController@login')->middleware(['web','guest']);
+    Route::post('logout', 'Auth\LoginController@logout')->name('logout')->middleware('web');
+    Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email')->middleware(['web','guest']);
+    Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request')->middleware(['web','guest']);
+    Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update')->middleware(['web','guest']);
+    Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset')->middleware(['web','guest']);
+    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register')->middleware(['web','guest']);
+    Route::post('register', 'Auth\RegisterController@register')->middleware(['web','guest']);
+});

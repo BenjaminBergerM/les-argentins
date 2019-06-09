@@ -13,7 +13,7 @@
 <section class="project-banner">
 
 </section>
-<section class="mt-2 mt-sm-5 container">
+<section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
         <h1 class="col-12 mb-4">Vattenfall for Scenarii</h1>
         <article class="col-sm-6">
@@ -64,8 +64,12 @@
 @endsection
 
 @section('footer')
-    {{-- <footer class="d-inline-flex flex-column justify-content-center">
-        <img src="{{ asset('images/logo.png') }}" alt="">
-        <h6>All right reserved Les Argentins® 2018</h6>
-    </footer> --}}
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <hr>
+        <hr>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="{{ asset('images/logo.png') }}" alt="">
+            <h6>All right reserved Les Argentins® 2018</h6>
+        </div>
+    </footer>
 @endsection
