@@ -28,6 +28,11 @@
         </article>
     </div>
 </section>
+<section class="mt-2 mt-sm-5">
+    <video style="width: 100%" controls>
+        <source src="{{ asset('videos/projects/5/HB_Pantalla Lanzamiento.mp4') }}" type="video/mp4">
+    </video>
+</section>
 <section class="row mt-2 mt-sm-5">
     <article class="col-sm-6 p-0">
         <img src="{{ asset('images/projects/5/project_img_1.png') }}" alt="" style="width: 100%">
@@ -42,6 +47,15 @@
     </article>
     <article class="col-sm-6 p-0">
         <img src="{{ asset('images/projects/5/project_img_4.png') }}" alt="" style="width: 100%">
+    </article>
+</section>
+<section class="row mt-2 mt-sm-5" style="">
+    <article class="col-sm-6 p-0">
+        <img src="{{ asset('images/projects/5/project_img_5.jpg') }}" alt="" style="width: 100%">
+    </article>
+    <article class="col-sm-6 p-0">
+        <img src="{{ asset('images/projects/5/project_img_6.jpg') }}" alt="" style="width: 100%">
+        <img src="{{ asset('images/projects/5/project_img_7.jpg') }}" alt="" style="width: 100%">
     </article>
 </section>
 

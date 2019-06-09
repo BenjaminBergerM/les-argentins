@@ -34,7 +34,7 @@
 </section>
 <section class="mt-2 mt-sm-5">
     <video style="width: 100%" controls>
-        <source src="{{ asset('videos/projects/1/02_VATTENFALL_30S_V2_Wip1.mp4') }}" type="video/mp4">
+        <source src="{{ asset('videos/projects/4/1ef7f0d5-0c0c-4d7e-aa02-204fe0e1fb0f.mp4') }}" type="video/mp4">
     </video>
 </section>
 <section class="row mt-2 mt-sm-5" style="max-height: 570px; overflow: hidden;">

@@ -3,7 +3,7 @@
 @section('css')
 <style>
 
-.project-banner { background: url("{{ asset('images/projects/2/project_1.png') }}") no-repeat center; }
+.project-banner { background: url("{{ asset('images/projects/7/project_background.png') }}") no-repeat center; }
 .body { overflow: hidden; }
 
 </style>
@@ -31,24 +31,7 @@
 </section>
 <section class="mt-2 mt-sm-5">
     <video style="width: 100%" controls>
-        <source src="{{ asset('videos/projects/1/02_VATTENFALL_30S_V2_Wip1.mp4') }}" type="video/mp4">
-    </video>
-</section>
-<section class="row mt-2 mt-sm-5">
-    <article class="col-sm-6">
-        <video style="width: 100%" controls>
-            <source src="{{ asset('videos/projects/1/03_VATTENFALL_10S_BLE_Wip1.mp4') }}" type="video/mp4">
-        </video>
-    </article>
-    <article class="col-sm-6">
-        <video style="width: 100%" controls>
-            <source src="{{ asset('videos/projects/1/04_VATTENFALL_10S_CRU2.mp4') }}" type="video/mp4">
-        </video>
-    </article>
-</section>
-<section class="mt-2 mt-sm-5">
-    <video style="width: 100%" controls>
-        <source src="{{ asset('videos/projects/1/05_VATTENFALL_20S_DIGITAL_CHEVEUX_Wip1.mp4') }}" type="video/mp4">
+        <source src="{{ asset('videos/projects/7/WIX_TV45sFR_Approbation_REV_LOW.mp4') }}" type="video/mp4">
     </video>
 </section>
 
