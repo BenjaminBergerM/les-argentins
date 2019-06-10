@@ -30,7 +30,7 @@ body { overflow-x: hidden; }
     </div>
 </section>
 <section class="mt-2 mt-sm-5">
-    <video style="width: 100%" controls>
+    <video style="width: 100%" poster="{{ asset('images/projects/7/default-video-1.png') }}" controls>
         <source src="{{ asset('videos/projects/7/WIX_TV45sFR_Approbation_REV_LOW.mp4') }}" type="video/mp4">
     </video>
 </section>
