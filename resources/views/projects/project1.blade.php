@@ -39,25 +39,25 @@ body { overflow-x: hidden; }
     </div>
 </section>
 <section class="mt-2 mt-sm-5">
-    <video style="width: 100%" controls>
+    <video style="width: 100%" poster="{{ asset('images/projects/1/default-video-1.png') }}" controls>
         <source src="{{ asset('videos/projects/1/02_VATTENFALL_30S_V2_Wip1.mp4') }}" type="video/mp4">
     </video>
 </section>
 <section class="row mt-2 mt-sm-5">
     <article class="col-sm-6">
-        <video style="width: 100%" controls>
+        <video style="width: 100%" poster="{{ asset('images/projects/1/default-video-2.png') }}" controls>
             <source src="{{ asset('videos/projects/1/04_VATTENFALL_10S_CRU2.mp4') }}" type="video/mp4">
         </video>
     </article>
     <article class="col-sm-6">
-        <video style="width: 100%" controls>
+        <video style="width: 100%" poster="{{ asset('images/projects/1/default-video-3.png') }}" controls>
             <source src="{{ asset('videos/projects/1/05_VATTENFALL_20S_DIGITAL_CHEVEUX_Wip1.mp4') }}" type="video/mp4">
         </video>
             
     </article>
 </section>
 <section class="mt-2 mt-sm-5">
-    <video style="width: 100%" controls>
+    <video style="width: 100%" poster="{{ asset('images/projects/1/default-video-4.png') }}" controls>
         <source src="{{ asset('videos/projects/1/03_VATTENFALL_10S_BLE_Wip1.mp4') }}" type="video/mp4">
     </video>
 </section>
