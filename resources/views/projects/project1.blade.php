@@ -15,7 +15,7 @@ body { overflow-x: hidden; }
 </section>
 <section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
-        <h1 class="col-12 mb-4">Vattenfall for Scenarii</h1>
+        <h1 class="col-12 mb-2 mt-1 mt-sm-0 mb-sm-4">Vattenfall for Scenarii</h1>
         <article class="col-sm-6">
             <h4>We received a call one day from Caroline Escande,
                 the brilliant planner at a Scenarii, a PR agency in

@@ -183,4 +183,7 @@ a:hover {
     .project .project-sidenav .content {
         padding: 0px 20px 0px 20px;
     }
+    .scroll {
+        display: none!important;
+    }
 }

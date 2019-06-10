@@ -15,7 +15,7 @@ body { overflow-x: hidden; }
 </section>
 <section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
-        <h1 class="col-12 mb-4">X-Files for Fox Latin America</h1>
+        <h1 class="col-12 mb-2 mt-1 mt-sm-0 mb-sm-4">X-Files for Fox Latin America</h1>
         <article class="col-sm-6">
             <h4>X-files is one of the best known series of all times. Even if one never watched an episode it is impossible not to be aware of Mulder, Skully and their inquest into supposed alien contacts. The series returned in 2016 after a 15 year absence and for the 11th season Fox Latin America wanted to make sure viewership was strong.
                 <br><br>

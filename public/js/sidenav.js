@@ -11,6 +11,11 @@ function closeNav() {
 }
 
 function openProjectNav(project_id) {
+
+    document.querySelectorAll('.sidenav').forEach(element => {
+        element.style.width = "0";
+    });;
+
     if (window.innerWidth < 576) {
         document.querySelector("#sideNavProject" + project_id).style.width = "100vw";
     } else {

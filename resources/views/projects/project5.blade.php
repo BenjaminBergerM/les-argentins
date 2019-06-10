@@ -15,7 +15,7 @@ body { overflow-x: hidden; }
 </section>
 <section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
-        <h1 class="col-12 mb-4">Binner 2015 Campaign</h1>
+        <h1 class="col-12 mb-2 mt-1 mt-sm-0 mb-sm-4">Binner 2015 Campaign</h1>
         <article class="col-sm-6">
             <h4>Political campaigns have little to do with traditional advertising in the same way politics has little to do with marketing. So it is very interesting to switch modes from one to another. <br><br>
 

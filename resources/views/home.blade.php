@@ -43,7 +43,7 @@
                 So after ten years as the ad agency that works for ad
                 agencies, <strong>we think it’s time for a change.</strong></p>
         </div>
-        <a href="#creativity" class="d-inline-flex flex-column align-items-center" style="position:absolute;left:50%;margin-left: -13px;margin-top: 10px;">
+        <a href="#creativity" class="scroll d-inline-flex flex-column align-items-center" style="position:absolute;left:50%;margin-left: -13px;margin-top: 10px;">
             <div style="height: 22px; width: 1px; background: #fff;"></div>
             <p class="text-white mt-1" style="font-size: 10px;">Scroll</p>
         </a>
@@ -239,7 +239,7 @@
             </article>
         </div>
     </section>
-    <section class="contact pt-5" id="contact">
+    <section class="contact pt-sm-5 p-0" id="contact">
         <div class="container pt-5 pt-sm-4">
             <h3 class="mb-5">Contacts</h3>
             <article class="d-flex flex-row mb-4 mb-sm-3">

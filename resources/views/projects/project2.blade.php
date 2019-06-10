@@ -15,7 +15,7 @@ body { overflow-x: hidden; }
 </section>
 <section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
-        <h1 class="col-12 mb-4">Reproquinol for Vetoquinol</h1>
+        <h1 class="col-12 mb-2 mt-1 mt-sm-0 mb-sm-4">Reproquinol for Vetoquinol</h1>
         <article class="col-sm-6">
             <h4>Vetoquinol had a range of products that help in animal reproductive issues, a very large range, complicated and wordy and not particularly as interesting as reproduction itself. They had the vision to create the umbrella brand Reproquinol and asked us to find a way to make this compelling and fun. That was the word: fun. 
                 <br><br>

@@ -15,7 +15,7 @@ body { overflow-x: hidden; }
 </section>
 <section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
-        <h1 class="col-12 mb-4">Samsung for Cheil</h1>
+        <h1 class="col-12 mb-2 mt-1 mt-sm-0 mb-sm-4">Samsung for Cheil</h1>
         <article class="col-sm-6">
             <h4>Technology is a complicated category in which to stand out.
                     Sometimes your product has a breakthrough and can be presented as something totally different and other times the innovation is incremental or hidden under the covers and much less evident. <br><br>

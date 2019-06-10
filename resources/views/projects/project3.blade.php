@@ -15,7 +15,7 @@ body { overflow-x: hidden; }
 </section>
 <section class="mt-2 mt-sm-5 container porject-box-1">
     <div class="row">
-        <h1 class="col-12 mb-4">Japanese Craft Beer for Sopexa NY</h1>
+        <h1 class="col-12 mb-2 mt-1 mt-sm-0 mb-sm-4">Japanese Craft Beer for Sopexa NY</h1>
         <article class="col-sm-6">
             <h4>Craft beers are on the rise all over the world. Small breweries are popping up everywhere and localized production and consumption abound. So it is natural that governments step in and help these small local industries expand and conquer markets elsewhere the same way they do with wines, cheeses and local produce. We had the chance to pitch alongside Sopexa
                 NY for such an initiative by Jfoodo, The Japan Food Product Overseas Promotion Center.
