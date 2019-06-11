@@ -39,10 +39,10 @@
         </nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="/#hero"><strong>Home</strong></a>
-            <a href="/#creativity">Creativity for all</a>
-            <a href="/#founders">Founders</a>
-            <a href="/#contact">Contacts</a>
+            <a href="/#hero" onclick="closeNav()"><strong>Home</strong></a>
+            <a href="/#creativity" onclick="closeNav()">Creativity for all</a>
+            <a href="/#founders" onclick="closeNav()">Founders</a>
+            <a href="/#contact" onclick="closeNav()">Contacts</a>
         </div>
     </header>
     <main class="">

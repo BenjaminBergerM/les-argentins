@@ -52,7 +52,7 @@ body {
     background-size: cover;
 }
 
-.founders .founder h5 {
+.founders .founder h6 {
     color: #FFB600;
     font-weight: bold;
 }
@@ -184,6 +184,9 @@ a:hover {
         padding: 0px 20px 0px 20px;
     }
     .scroll {
+        display: none!important;
+    }
+    .hidden-sm-down	{
         display: none!important;
     }
 }

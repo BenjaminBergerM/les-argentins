@@ -21,7 +21,7 @@
         .hero { background: url("{{ asset('images/home/background_phone.gif') }}") no-repeat center; }
         .about-us { background: url("{{ asset('images/home/background_2_phone.png') }}") no-repeat center; }
         .creativity { background: url("{{ asset('images/home/background_3_phone.png') }}") no-repeat center; }
-        .contact { background: white; }
+        .contact { background: url("{{ asset('images/home/mapa_phone.png') }}") no-repeat center; }
     }
 
 </style>   
@@ -31,7 +31,7 @@
     <section class="hero d-flex flex-comlumn align-items-end justify-content-center" id="hero">
         <a href="#about-us" class="d-inline-flex flex-column align-items-center">
             <img src="{{ asset('images/icons/down.png') }}" alt="" width="16px" height="33px">
-            <p class="text-white mt-1" style="font-size: 10px;">You know what to do</p>
+            <p class="text-white mt-1" style="font-size: 10px;">Scroll</p>
         </a>
     </section>
     <section id="about-us" class="about-us d-flex flex-comlumn align-items-end pb-2">
@@ -58,7 +58,7 @@
 
         <article class="project project-1 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" style="position:relative;" id="project-1">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For PR agencies</strong> that get asked to launch a big player in the energy market</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For PR agencies</strong> that get asked to launch a big player in the energy market</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('1')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -83,7 +83,7 @@
         </article>
         <article class="project project-2 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-2">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For pharma companies</strong> looking to spice things up</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For pharma companies</strong> looking to spice things up</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('2')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -104,7 +104,7 @@
         </article>
         <article class="project project-3 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-3">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For countries</strong> trying to get other countries to drink their beer</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For countries</strong> trying to get other countries to drink their beer</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('3')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -123,7 +123,7 @@
         </article>
         <article class="project project-4 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-4">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For in-house agencies</strong> looking for something that is out of this world</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For in-house agencies</strong> looking for something that is out of this world</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('4')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -145,7 +145,7 @@
 
         <article class="project project-5 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-5">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For guys</strong> running for President</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For guys</strong> running for President</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('5')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -167,7 +167,7 @@
 
         <article class="project project-6 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-6">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For products</strong> that need a bitchin’ demo</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For products</strong> that need a bitchin’ demo</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('6')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -187,7 +187,7 @@
         </article>
         <article class="project project-7 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" id="project-7">
             <div class="container">
-                <h3 class="text-white col-sm-5"><strong>For a startup</strong> that needs to be tuned into France</h3>
+                <h3 class="text-white col-sm-5 p-0"><strong>For a startup</strong> that needs to be tuned into France</h3>
                 <a href="javascript:void(0)" onclick="openProjectNav('7')" class="see-more d-flex flex-row align-items-center mt-4">
                     <img src="{{ asset('images/icons/see-more.png') }}" alt="">
                     <p class="ml-3 mb-0 text-white">See more</p>
@@ -211,7 +211,7 @@
             <article class="mr-sm-5 mb-5 mb-sm-0">
                 <a href="javascript:void(0)" onclick="openProjectNav('Founder1')" class="d-flex flex-column align-items-center founder">
                     <img width="225px" src="{{ asset('images/home/founders/founder_1.png') }}" class="founder-img" alt="">
-                    <h5 class="mt-2">Didier Zakine</h5>
+                    <h6 class="mt-2">Didier Zakine</h6>
                 </a>
                 <div id="sideNavProjectFounder1" class="sidenav project-sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav('Founder1')">&times;</a>
@@ -226,7 +226,7 @@
             <article class="d-flex flex-column align-items-center">
                 <a href="javascript:void(0)" onclick="openProjectNav('Founder2')" class="d-flex flex-column align-items-center founder">
                     <img width="225px" src="{{ asset('images/home/founders/founder_2.png') }}" class="founder-img" alt="">
-                    <h5 class="mt-2">Mariano Favetto</h5>
+                    <h6 class="mt-2">Mariano Favetto</h6>
                 </a>
                 <div id="sideNavProjectFounder2" class="sidenav project-sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav('Founder2')">&times;</a>
@@ -243,8 +243,8 @@
         <div class="container pt-5 pt-sm-4">
             <h3 class="mb-5">Contacts</h3>
             <article class="d-flex flex-row mb-4 mb-sm-3">
-                <img src="{{ asset('images/icons/blue-dot.png') }}" alt="" width="28px" height="28px">
-                <div class="d-flex flex-column ml-4">
+                <img src="{{ asset('images/icons/blue-dot.png') }}" alt="" width="28px" height="28px" class="hidden-sm-down">
+                <div class="d-flex flex-column ml-sm-4">
                     <h5 class="mb-2"><strong>Europe, Middle East & Africa</strong></h5>
                     <h6>Vincent Doye</h6>
                     <h6><a class="text-black" href="mailto:vincent@lesargentins.com">vincent@lesargentins.com</a></h6>
@@ -252,8 +252,8 @@
                 </div>
             </article>
             <article class="d-flex flex-row mb-4 mb-sm-3">
-                <img src="{{ asset('images/icons/yellow-dot.png') }}" alt="" width="28px" height="28px">
-                <div class="d-flex flex-column ml-4">
+                <img src="{{ asset('images/icons/yellow-dot.png') }}" alt="" width="28px" height="28px" class="hidden-sm-down">
+                <div class="d-flex flex-column ml-sm-4">
                     <h5 class="mb-2"><strong>North America</strong></h5>
                     <h6>Liz Marks</h6>
                     <h6><a class="text-black" href="mailto:liz@lesargentins.com">liz@lesargentins.com</a></h6>
@@ -261,8 +261,8 @@
                 </div>        
             </article>
             <article class="d-flex flex-row mb-4 mb-sm-3">
-                <img src="{{ asset('images/icons/red-dot.png') }}" alt="" width="28px" height="28px">
-                <div class="d-flex flex-column ml-4">
+                <img src="{{ asset('images/icons/red-dot.png') }}" alt="" width="28px" height="28px" class="hidden-sm-down">
+                <div class="d-flex flex-column ml-sm-4">
                     <h5 class="mb-2"><strong>Latin America & Caribbean</strong></h5>
                     <h6>Helios Garnier</h6>
                     <h6><a class="text-black" href="mailto:helios@lesargentins.com">helios@lesargentins.com</a></h6>
@@ -271,8 +271,8 @@
                 
             </article>
             <article class="d-flex flex-row mb-4 mb-sm-3">
-                <img src="{{ asset('images/icons/black-dot.png') }}" alt="" width="28px" height="28px">
-                <div class="d-flex flex-column ml-4">
+                <img src="{{ asset('images/icons/black-dot.png') }}" alt="" width="28px" height="28px" class="hidden-sm-down">
+                <div class="d-flex flex-column ml-sm-4">
                     <h5 class="mb-2"><strong>Rest of the World</strong></h5>
                     <h6>Didier Zakine</h6>
                     <h6><a class="text-black" href="mailto:didier@lesargentins.com">didier@lesargentins.com</a></h6>
