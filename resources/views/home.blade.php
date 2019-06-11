@@ -55,7 +55,6 @@
         </a>
     </section>
     <section>
-
         <article class="project project-1 d-flex flex-comlumn align-items-end align-items-sm-center pb-5 pb-sm-0" style="position:relative;" id="project-1">
             <div class="container">
                 <h3 class="text-white col-sm-5 p-0"><strong>For PR agencies</strong> that get asked to launch a big player in the energy market</h3>

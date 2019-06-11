@@ -63,8 +63,10 @@ body { overflow-x: hidden; }
 @endsection
 
 @section('footer')
-    {{-- <footer class="d-inline-flex flex-column justify-content-center">
-        <img src="{{ asset('images/logo.png') }}" alt="">
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+        <img src="{{ asset('images/logo-black.png') }}" height="80px" alt="" class="mb-3">
         <h6>All right reserved Les Argentins® 2018</h6>
-    </footer> --}}
+    </div>
+</footer>
 @endsection

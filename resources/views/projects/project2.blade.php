@@ -30,35 +30,32 @@ body { overflow-x: hidden; }
     </div>
 </section>
 <section class="row mt-2 mt-sm-5">
-    <article class="col-sm-4">
+    <article class="col-sm-5">
         <img src="{{ asset('images/projects/2/project_img_1.png') }}" alt="" style="width: 100%">
-    </article>
-    <article class="col-sm-4">
         <img src="{{ asset('images/projects/2/project_img_2.png') }}" alt="" style="width: 100%">
-    </article>
-    <article class="col-sm-4">
         <img src="{{ asset('images/projects/2/project_img_3.png') }}" alt="" style="width: 100%">
-    </article>
-</section>
-<section class="row mt-2 mt-sm-5">
-    <article class="col-sm-6 p-0">
         <img src="{{ asset('images/projects/2/project_img_4.png') }}" alt="" style="width: 100%">
-    </article>
-    <article class="col-sm-6 p-0">
         <img src="{{ asset('images/projects/2/project_img_5.png') }}" alt="" style="width: 100%">
     </article>
-    <article class="col-sm-6 p-0">
+    <article class="col-sm-7">
         <img src="{{ asset('images/projects/2/project_img_6.png') }}" alt="" style="width: 100%">
-    </article>
-    <article class="col-sm-6 p-0">
-        <img src="{{ asset('images/projects/2/project_img_7.png') }}" alt="" style="width: 100%">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{{ asset('images/projects/2/project_img_7.png') }}" alt="" style="width: 100%">
+            </div>
+            <div class="col-sm-6">
+                <img src="{{ asset('images/projects/2/project_img_8.png') }}" alt="" style="width: 100%">
+            </div>
+        </div>
     </article>
 </section>
 @endsection
 
 @section('footer')
-    {{-- <footer class="d-inline-flex flex-column justify-content-center">
-        <img src="{{ asset('images/logo.png') }}" alt="">
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+        <img src="{{ asset('images/logo-black.png') }}" height="80px" alt="" class="mb-3">
         <h6>All right reserved Les Argentins® 2018</h6>
-    </footer> --}}
+    </div>
+</footer>
 @endsection

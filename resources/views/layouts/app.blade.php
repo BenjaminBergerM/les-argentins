@@ -19,23 +19,28 @@
 
 </head>
 <body>
+    <div class="overlay">
+    </div>
     <header>
-        <nav class="navbar navbar-expand fixed-top bg-transparent container mt-4" style="position: absolute;">
-            <a href="/"><img src="{{ asset('images/logo.png') }}" alt="" height="64px"></a>
-            <ul class="navbar-nav ml-auto">
-                {{-- <li class="nav-item active">
-                    <a class="nav-link" href="#">ES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FR</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">EN</a>
-                </li> --}}
-                <li>
-                    <a class="nav-link" onclick="openNav()" href="#">☰</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand fixed-top p-0" style="position: fixed;">
+            <div class="container my-4 px-2 px-sm-0">
+
+                <a href="/"><img id="logo" src="{{ asset('images/logo.png') }}" alt="" height="64px"></a>
+                <ul class="navbar-nav ml-auto">
+                    {{-- <li class="nav-item active">
+                        <a class="nav-link" href="#">ES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EN</a>
+                    </li> --}}
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openNav(event)" href="#">☰</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

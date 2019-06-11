@@ -34,12 +34,28 @@ body { overflow-x: hidden; }
         <source src="{{ asset('videos/projects/6/Samsung_Mambo_Viral.mp4') }}" type="video/mp4">
     </video>
 </section>
+<section class="row mt-2 mt-sm-5 px-5">
+    <article class="col-sm-3 p-1">
+        <img src="{{ asset('images/projects/6/project_img_1.png') }}" alt="" style="width: 100%">
+    </article>
+    <article class="col-sm-3 p-1">
+        <img src="{{ asset('images/projects/6/project_img_2.png') }}" alt="" style="width: 100%">
+    </article>
+    <article class="col-sm-3 p-1">
+        <img src="{{ asset('images/projects/6/project_img_3.png') }}" alt="" style="width: 100%">
+    </article>
+    <article class="col-sm-3 p-1">
+        <img src="{{ asset('images/projects/6/project_img_4.png') }}" alt="" style="width: 100%">
+    </article>
+</section>
 
 @endsection
 
 @section('footer')
-    {{-- <footer class="d-inline-flex flex-column justify-content-center">
-        <img src="{{ asset('images/logo.png') }}" alt="">
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+        <img src="{{ asset('images/logo-black.png') }}" height="80px" alt="" class="mb-3">
         <h6>All right reserved Les Argentins® 2018</h6>
-    </footer> --}}
+    </div>
+</footer>
 @endsection

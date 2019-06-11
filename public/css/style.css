@@ -39,6 +39,11 @@ body {
     font-weight: normal;
 }
 
+.navbar {
+    position: fixed;
+    transition: top 0.3s;
+}
+
 .hero, .about-us, .creativity, .project, .founders, .contact {
     height: 100vh;
     width: 100%;
@@ -96,6 +101,8 @@ a:hover {
     text-decoration: none;
 }
 
+a:hover p { font-weight:bold; }
+
 .project .project-sidenav .content, .founders .project-sidenav .content {
     padding: 0px 55px 0px 55px;
 }
@@ -127,9 +134,9 @@ a:hover {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 80px;
-  }
-  
-  .sidenav>a {
+}
+
+.sidenav>a {
     padding: 8px 8px 8px 55px;
     text-decoration: none;
     font-size: 20px;
@@ -138,38 +145,46 @@ a:hover {
     display: block;
     transition: 0.3s;
     position: relative;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     font-weight: bold;
     color: black;
-  }
+}
 
-  .sidenav a:before {
+.sidenav a:before {
     content: "";
     width: 50%;
     height: 1px;
     bottom: 0;
     left: 25%;
     border-bottom: 1px solid black;
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 
-  .porject-box-1 h1 {
+.porject-box-1 h1 {
     font-size: 1.5rem;
-  }
+}
 
-  .porject-box-1 h4 {
-      font-size: 1rem;
-  }
-  
+.porject-box-1 h4 {
+    font-size: 1rem;
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    z-index: 1;
+    transition: background-color 1s linear;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav { padding-top: 15px; }
     .sidenav a { font-size: 18px; }
