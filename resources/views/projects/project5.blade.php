@@ -3,7 +3,7 @@
 @section('css')
 <style>
 
-.project-banner { background: url("{{ asset('images/projects/5/project_background.png') }}") no-repeat center; }
+.project-banner { background: url("{{ asset('images/projects/5/header_img.png') }}") no-repeat center; }
 body { overflow-x: hidden; }
 
 </style>
@@ -51,11 +51,10 @@ body { overflow-x: hidden; }
 </section>
 <section class="row mt-2 mt-sm-5" style="">
     <article class="col-sm-6 p-0">
-        <img src="{{ asset('images/projects/5/project_img_5.jpg') }}" alt="" style="width: 100%">
+        <img src="{{ asset('images/projects/5/project_img_5.png') }}" alt="" style="width: 100%">
     </article>
     <article class="col-sm-6 p-0">
-        <img src="{{ asset('images/projects/5/project_img_6.jpg') }}" alt="" style="width: 100%">
-        <img src="{{ asset('images/projects/5/project_img_7.jpg') }}" alt="" style="width: 100%">
+        <img src="{{ asset('images/projects/5/project_img_6.png') }}" alt="" style="width: 100%">
     </article>
 </section>
 
@@ -64,7 +63,7 @@ body { overflow-x: hidden; }
 @section('footer')
 <footer class="d-flex flex-column justify-content-center align-items-center">
     <div class="d-flex flex-column justify-content-center align-items-center p-4">
-        <img src="{{ asset('images/logo-black.png') }}" height="80px" alt="" class="mb-3">
+        <img src="{{ asset('images/logo-black.png') }}" height="64px" alt="" class="mb-3">
         <h6>All right reserved Les Argentins® 2018</h6>
     </div>
 </footer>

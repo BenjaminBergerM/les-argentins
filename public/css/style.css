@@ -185,6 +185,10 @@ a:hover p { font-weight:bold; }
     transition: background-color 1s linear;
 }
 
+.footer h6 {
+    font-size: 0.8rem;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav { padding-top: 15px; }
     .sidenav a { font-size: 18px; }

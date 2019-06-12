@@ -26,11 +26,15 @@ function openProjectNav(project_id) {
         document.querySelector("#sideNavProject" + project_id).style.width = "100vw";
     } else {
         document.querySelector("#sideNavProject" + project_id).style.width = "35vw";
+        let overlay = document.querySelector('.overlay');
+        overlay.style.height = "100vh";
     }
 }
 
 function closeProjectNav(project_id) {
     document.querySelector("#sideNavProject" + project_id).style.width = "0";
+    let overlay = document.querySelector('.overlay');
+    overlay.style.height = "0";
 }
 
 
