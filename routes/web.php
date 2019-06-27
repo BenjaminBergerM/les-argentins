@@ -73,21 +73,21 @@ Route::prefix('backoffice')->group(function() {
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login')->middleware(['web','guest']);
     Route::post('login', 'Auth\LoginController@login')->middleware(['web','guest']);
     Route::post('logout', 'Auth\LoginController@logout')->name('logout')->middleware('web');
-    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register')->middleware(['web','guest']);
-    Route::post('register', 'Auth\RegisterController@register')->middleware(['web','guest']);
+    // Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register')->middleware(['web','guest']);
+    // Route::post('register', 'Auth\RegisterController@register')->middleware(['web','guest']);
 });
 
-Route::get('storage-link', function() {
-    Artisan::call('storage:link');
-    return 'Done!';
-});
+// Route::get('storage-link', function() {
+//     Artisan::call('storage:link');
+//     return 'Done!';
+// });
 
-Route::get('migrate', function() {
-    Artisan::call('migrate');
-    return 'Done!';
-});
+// Route::get('migrate', function() {
+//     Artisan::call('migrate');
+//     return 'Done!';
+// });
 
-Route::get('seed', function() {
-    Artisan::call('db:seed');
-    return 'Done!';
-});
+// Route::get('seed', function() {
+//     Artisan::call('db:seed');
+//     return 'Done!';
+// });
