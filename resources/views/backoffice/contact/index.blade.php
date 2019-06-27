@@ -10,8 +10,9 @@
             </button>                
         </div>          
     @endif
+
     <div class="card">
-        <h5 class="card-header">Projects</h5>
+        <h5 class="card-header">Contact info</h5>
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col-sm-1">
@@ -23,7 +24,7 @@
                 </div>
                 <div class="col-sm-9"></div>
                 <div class="col-sm-1 ml-auto">
-                    <a class="btn btn-primary text-white" href="{{ route('backoffice.projects.create') }}">+</a>
+                    <a class="btn btn-primary text-white" href="{{ route('backoffice.contact.create') }}">+</a>
                 </div>
             </div>
             <table class="table">
@@ -31,18 +32,26 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Title</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($projects as $project)
+                    @foreach ($contacts as $contact)
                     <tr>
-                        <th scope="row">{{ $project->id }}</th>
-                        <td>{{ $project->title }}</td>
+                        <th scope="row">{{ $contact->id }}</th>
+                        <td>{{ $contact->title }}</td>
+                        <td>{{ $contact->name }}</td>
                         <td>
-                            <a href="{{ route('backoffice.projects.edit', $project->id) }}"><i class="far fa-edit"></i></a>
-                            <a href=""><i class="far fa-trash-alt"></i></a>
-                            <a href="{{ route('backoffice.projects.contents.index', $project->id) }}"><i class="fas fa-plus"></i></a>
+                            <a href="{{ route('backoffice.contact.edit', $contact->id) }}"><i class="far fa-edit"></i></a>
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('contact-delete-{{ $contact->id }}').submit();">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+
+                            <form id="contact-delete-{{ $contact->id }}" action="{{ route('backoffice.contact.destroy', $contact->id) }}" method="POST" style="display: none;">
+                                @csrf
+                                @method('delete')
+                            </form>
                         </td>
                     </tr>
                     @endforeach

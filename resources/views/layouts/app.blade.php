@@ -27,15 +27,15 @@
 
                 <a href="/"><img id="logo" src="{{ asset('images/logo.png') }}" alt="" height="64px"></a>
                 <ul class="navbar-nav ml-auto">
-                    {{-- <li class="nav-item active">
-                        <a class="nav-link" href="#">ES</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url('locale/es') }}">ES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FR</a>
+                        <a class="nav-link" href="{{ url('locale/fr') }}">FR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EN</a>
-                    </li> --}}
+                        <a class="nav-link" href="{{ url('locale/en') }}">EN</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" onclick="openNav(event)" href="#">☰</a>
                     </li>

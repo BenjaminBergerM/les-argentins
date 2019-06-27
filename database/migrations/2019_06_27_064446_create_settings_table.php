@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProjectsTable extends Migration
+class CreateSettingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,11 @@ class CreateProjectsTable extends Migration
      */
     public function up()
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('home_text');
-            $table->string('home_background');
-            $table->text('sidenav_detail');
-            $table->string('sidenav_img');
-            $table->string('project_img');
-            $table->string('lang');
+            $table->string('key');
+            $table->text('value')->nullable();
+            $table->string('lang')->nullable();
             $table->timestamps();
         });
     }
@@ -33,6 +29,6 @@ class CreateProjectsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('projects');
+        Schema::dropIfExists('settings');
     }
 }

@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'MainController@index')->name('index');
-Route::get('/project/{id}', 'MainController@show')->name('show');
+Route::get('/project/{id}', 'MainController@show')->name('projects.show');
+
+Route::get('locale/{locale}', 'MainController@locale')->name('locale');
 
 Route::prefix('backoffice')->group(function() {
     
@@ -24,6 +26,45 @@ Route::prefix('backoffice')->group(function() {
             Route::get('/', 'Backoffice\ProjectsController@index')->name('index');
             Route::get('/create', 'Backoffice\ProjectsController@create')->name('create');
             Route::post('/', 'Backoffice\ProjectsController@store')->name('store');
+            Route::get('/{id}/edit', 'Backoffice\ProjectsController@edit')->name('edit');
+            Route::put('/{id}/update', 'Backoffice\ProjectsController@update')->name('update');
+            Route::delete('/{id}/destroy', 'Backoffice\ProjectsController@destroy')->name('destroy');
+            Route::prefix('/{project_id}/content')->name('contents.')->group(function() {
+                Route::get('/', 'Backoffice\ContentController@index')->name('index');
+                Route::get('/create', 'Backoffice\ContentController@create')->name('create');
+                Route::post('/', 'Backoffice\ContentController@store')->name('store');
+                Route::get('/{content_id}/edit', 'Backoffice\ContentController@edit')->name('edit');
+                Route::put('/{content_id}/update', 'Backoffice\ContentController@update')->name('update');
+                Route::delete('/{content_id}/delete', 'Backoffice\ContentController@destroy')->name('destroy');
+                Route::get('/{content_id}/up', 'Backoffice\ContentController@up')->name('up');
+                Route::get('/{content_id}/down', 'Backoffice\ContentController@down')->name('down');
+            });
+        });
+
+        Route::prefix('founders')->name('backoffice.founders.')->group(function() {
+            Route::get('/', 'Backoffice\FoundersController@index')->name('index');    
+        });
+
+        Route::prefix('contact')->name('backoffice.contact.')->group(function() {
+            Route::get('/', 'Backoffice\ContactController@index')->name('index');
+            Route::get('/create', 'Backoffice\ContactController@create')->name('create');
+            Route::post('/store', 'Backoffice\ContactController@store')->name('store');
+            Route::get('/{id}/edit', 'Backoffice\ContactController@edit')->name('edit');
+            Route::put('/{id}/update', 'Backoffice\ContactController@update')->name('update');
+            Route::delete('/{id}/delete', 'Backoffice\ContactController@destroy')->name('destroy');
+        });
+
+        Route::prefix('founders')->name('backoffice.founders.')->group(function() {
+            Route::get('/', 'Backoffice\FoundersController@index')->name('index');
+            Route::get('/create', 'Backoffice\FoundersController@create')->name('create');
+            Route::post('/store', 'Backoffice\FoundersController@store')->name('store');
+            Route::get('/{id}/edit', 'Backoffice\FoundersController@edit')->name('edit');
+            Route::put('/{id}/update', 'Backoffice\FoundersController@update')->name('update');
+            Route::delete('/{id}/delete', 'Backoffice\FoundersController@destroy')->name('destroy');
+        });
+
+        Route::prefix('settings')->name('backoffice.settings.')->group(function() {
+            Route::get('/', 'Backoffice\SettingsController@index')->name('index');
         });
 
     });
@@ -32,10 +73,6 @@ Route::prefix('backoffice')->group(function() {
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login')->middleware(['web','guest']);
     Route::post('login', 'Auth\LoginController@login')->middleware(['web','guest']);
     Route::post('logout', 'Auth\LoginController@logout')->name('logout')->middleware('web');
-    Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email')->middleware(['web','guest']);
-    Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request')->middleware(['web','guest']);
-    Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update')->middleware(['web','guest']);
-    Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset')->middleware(['web','guest']);
     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register')->middleware(['web','guest']);
     Route::post('register', 'Auth\RegisterController@register')->middleware(['web','guest']);
 });

@@ -67,7 +67,7 @@ h3 {
     font-weight: lighter;
 }
 
-h3>strong {
+h3>strong, h3 b {
     font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ p {
     font-size: 1.1rem;
 }
 
-p>strong {
+p>strong, p b {
     font-weight: bold;
 }
 
@@ -187,6 +187,13 @@ a:hover p { font-weight:bold; }
 
 .footer h6 {
     font-size: 0.8rem;
+}
+
+.error-label {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
 }
 
 @media screen and (max-height: 450px) {

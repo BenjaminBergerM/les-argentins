@@ -4,23 +4,17 @@ namespace App\Http\Controllers\Backoffice;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Project;
 
-class BackofficeController extends Controller
+class SettingsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        $lang = $request->lang;
-        if (!$lang) {
-            $lang = 'en';
-        }
-        $projects = Project::where('lang', $lang)->get();
-        return view('backoffice.projects.index')->with('projects', $projects);
+        return view('backoffice.settings.index');
     }
 
     /**

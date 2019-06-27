@@ -7,11 +7,12 @@
             {{ session('status') }}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-            </button>                
-        </div>          
+            </button>
+        </div>
     @endif
+
     <div class="card">
-        <h5 class="card-header">Projects</h5>
+        <h5 class="card-header">Contact info</h5>
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col-sm-1">
@@ -23,26 +24,32 @@
                 </div>
                 <div class="col-sm-9"></div>
                 <div class="col-sm-1 ml-auto">
-                    <a class="btn btn-primary text-white" href="{{ route('backoffice.projects.create') }}">+</a>
+                    <a class="btn btn-primary text-white" href="{{ route('backoffice.founders.create') }}">+</a>
                 </div>
             </div>
             <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Title</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($projects as $project)
+                    @foreach ($founders as $founder)
                     <tr>
-                        <th scope="row">{{ $project->id }}</th>
-                        <td>{{ $project->title }}</td>
+                        <th scope="row">{{ $founder->id }}</th>
+                        <td>{{ $founder->name }}</td>
                         <td>
-                            <a href="{{ route('backoffice.projects.edit', $project->id) }}"><i class="far fa-edit"></i></a>
-                            <a href=""><i class="far fa-trash-alt"></i></a>
-                            <a href="{{ route('backoffice.projects.contents.index', $project->id) }}"><i class="fas fa-plus"></i></a>
+                            <a href="{{ route('backoffice.founders.edit', $founder->id) }}"><i class="far fa-edit"></i></a>
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('founder-delete-{{ $founder->id }}').submit();">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+
+                            <form id="founder-delete-{{ $founder->id }}" action="{{ route('backoffice.founders.destroy', $founder->id) }}" method="POST" style="display: none;">
+                                @csrf
+                                @method('delete')
+                            </form>
                         </td>
                     </tr>
                     @endforeach
