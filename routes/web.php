@@ -88,6 +88,6 @@ Route::get('migrate', function() {
 });
 
 Route::get('seed', function() {
-    Artisan::call('seed');
+    Artisan::call('db:seed');
     return 'Done!';
 });
