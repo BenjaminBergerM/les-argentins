@@ -99,7 +99,7 @@ Route::prefix('backoffice')->group(function() {
 //     return 'Done!';
 // });
 
-// Route::get('seed', function() {
-//     Artisan::call('db:seed');
-//     return 'Done!';
-// });
+Route::get('seed', function() {
+    Artisan::call('db:seed');
+    return 'Done!';
+});
