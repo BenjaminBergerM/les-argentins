@@ -257,7 +257,7 @@ class ContentController extends Controller
         $content->project_id = $project_id;
         $content->order = $project->contents->count() + 1;
         $content->save();
-
+        
         for ($i=0; $i < count($content->columns->count()); $i++) {
             $content_column = $content->columns[$i];
             $content_column->type = $column_types[$i];

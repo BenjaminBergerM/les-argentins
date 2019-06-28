@@ -27,15 +27,21 @@
 
                 <a href="/"><img id="logo" src="{{ asset('images/logo.png') }}" alt="" height="64px"></a>
                 <ul class="navbar-nav ml-auto">
+                    @if (\App\Setting::where('key', 'home_es_button')->first()->value)
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url('locale/es') }}">ES</a>
                     </li>
+                    @endif
+                    @if (\App\Setting::where('key', 'home_fr_button')->first()->value)
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('locale/fr') }}">FR</a>
                     </li>
+                    @endif
+                    @if (\App\Setting::where('key', 'home_en_button')->first()->value)
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('locale/en') }}">EN</a>
                     </li>
+                    @endif
                     <li class="nav-item">
                         <a class="nav-link" onclick="openNav(event)" href="#">☰</a>
                     </li>

@@ -18,19 +18,31 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'key' => 'first_image_responsive',
-            ],		
+            ],
             [
                 'key' => 'second_image',
-            ],		
+            ],
             [
                 'key' => 'second_image_responsive',
-            ],		
+            ],
             [
                 'key' => 'third_image',
-            ],		
+            ],
             [
                 'key' => 'third_image_responsive',
-            ],		
+            ],
+            [
+                'key' => 'founders_image',
+            ],
+            [
+                'key' => 'founders_image_responsive',
+            ],
+            [
+                'key' => 'contact_image',
+            ],
+            [
+                'key' => 'contact_image_responsive',
+            ],
             [
                 'key' => 'home_en_button',
                 'value' => true

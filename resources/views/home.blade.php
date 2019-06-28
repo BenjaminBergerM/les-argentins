@@ -2,23 +2,23 @@
 
 @section('css')
 <style>
-    .hero { background: url("{{ asset('images/home/background.gif') }}") no-repeat center; }
-    .about-us { background: url("{{ asset('images/home/background_2.png') }}") no-repeat center; }
-    .creativity { background: url("{{ asset('images/home/background_3.png') }}") no-repeat center; }
+    .hero { background: url("{{ Storage::url($first_image->value) }}") no-repeat center; }
+    .about-us { background: url("{{ Storage::url($second_image->value) }}") no-repeat center; }
+    .creativity { background: url("{{ Storage::url($third_image->value) }}") no-repeat center; }
     
     @for ($i = 0; $i < $projects->count(); $i++)
         @php $img = Storage::url($projects[$i]->home_background); @endphp
         {{ ".project-$i { background: url($img) no-repeat center; }" }}
     @endfor
     
-    .founders { background: url("{{ asset('images/home/founders.png') }}") no-repeat center; }
-    .contact { background: url("{{ asset('images/home/mapa.png') }}") no-repeat center; }
+    .founders { background: url("{{ Storage::url($founders_image->value) }}") no-repeat center; }
+    .contact { background: url("{{ Storage::url($contact_image->value) }}") no-repeat center; }
     
     @media only screen and (max-width: 576px) {
-        .hero { background: url("{{ asset('images/home/background_phone.gif') }}") no-repeat center; }
-        .about-us { background: url("{{ asset('images/home/background_2_phone.png') }}") no-repeat center; }
-        .creativity { background: url("{{ asset('images/home/background_3_phone.png') }}") no-repeat center; }
-        .contact { background: url("{{ asset('images/home/mapa_phone.png') }}") no-repeat center; }
+        .hero { background: url("{{ Storage::url($first_image_responsive->value) }}") no-repeat center; }
+        .about-us { background: url("{{ Storage::url($second_image_responsive->value) }}") no-repeat center; }
+        .creativity { background: url("{{ Storage::url($third_image_responsive->value) }}") no-repeat center; }
+        .contact { background: url("{{ Storage::url($contact_image_responsive->value) }}") no-repeat center; }
     }
 
 </style>   
@@ -33,12 +33,8 @@
     </section>
     <section id="about-us" class="about-us d-flex flex-comlumn align-items-end pb-2">
         <div class="container pb-5 text-center text-sm-left">
-            <h3 class="text-white mb-2 col-sm-5 px-0"><strong>Lots has changed since
-                we started 10 years ago:</strong></h3>
-            <p class="text-white col-sm-5 px-0">Social media is now the <strong>biggest media</strong>, consultants are
-                becoming agency holdings and data the big star.
-                So after ten years as the ad agency that works for ad
-                agencies, <strong>we think it’s time for a change.</strong></p>
+            <h3 class="text-white mb-2 col-sm-5 px-0"><strong>{{ $home_title->value }}</strong></h3>
+            <div class="text-white col-sm-5 px-0">{!! $home_detail->value !!}</div>
         </div>
         <a href="#creativity" class="scroll d-inline-flex flex-column align-items-center" style="position:absolute;left:50%;margin-left: -13px;margin-top: 10px;">
             <div style="height: 22px; width: 1px; background: #fff;"></div>

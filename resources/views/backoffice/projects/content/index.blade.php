@@ -21,8 +21,8 @@
                 <a href="#" onclick="event.preventDefault(); document.getElementById('content-delete-{{ $content->id }}').submit();">
                     <i class="far fa-trash-alt"></i>
                 </a>
-                {{-- <a href="{{ route('backoffice.projects.contents.up', [$project->id, $content->id]) }}"><i class="fas fa-arrow-up"></i></a>
-                <a href="{{ route('backoffice.projects.contents.down', [$project->id, $content->id]) }}"><i class="fas fa-arrow-down"></i></a> --}}
+                <a href="{{ route('backoffice.projects.contents.up', [$project->id, $content->id]) }}"><i class="fas fa-arrow-up"></i></a>
+                <a href="{{ route('backoffice.projects.contents.down', [$project->id, $content->id]) }}"><i class="fas fa-arrow-down"></i></a>
 
                 <form id="content-delete-{{ $content->id }}" action="{{ route('backoffice.projects.contents.destroy', [$project->id, $content->id]) }}" method="POST" style="display: none;">
                     @csrf

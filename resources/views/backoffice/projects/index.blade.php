@@ -31,6 +31,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Title</th>
+                        <th scope="col">Url</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
@@ -39,9 +40,17 @@
                     <tr>
                         <th scope="row">{{ $project->id }}</th>
                         <td>{{ $project->title }}</td>
+                        <td><a target="_blanck" href="{{ env('APP_URL').'/project/'.$project->id }}">{{ env('APP_URL').'/project/'.$project->id }}</a></td>
                         <td>
                             <a href="{{ route('backoffice.projects.edit', $project->id) }}"><i class="far fa-edit"></i></a>
-                            <a href=""><i class="far fa-trash-alt"></i></a>
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('project-delete-{{ $project->id }}').submit();">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+
+                            <form id="project-delete-{{ $project->id }}" action="{{ route('backoffice.projects.destroy', $project->id) }}" method="POST" style="display: none;">
+                                @csrf
+                                @method('delete')
+                            </form>
                             <a href="{{ route('backoffice.projects.contents.index', $project->id) }}"><i class="fas fa-plus"></i></a>
                         </td>
                     </tr>

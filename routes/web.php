@@ -65,6 +65,18 @@ Route::prefix('backoffice')->group(function() {
 
         Route::prefix('settings')->name('backoffice.settings.')->group(function() {
             Route::get('/', 'Backoffice\SettingsController@index')->name('index');
+
+            Route::name('lang.')->group(function() {
+                Route::put('/lang', 'Backoffice\SettingsController@lang_update')->name('update');
+            });
+            
+            Route::name('home_texts.')->group(function() {
+                Route::put('/home-texts', 'Backoffice\SettingsController@home_texts_update')->name('update');
+            });
+
+            Route::name('home_images.')->group(function() {
+                Route::put('/home-images', 'Backoffice\SettingsController@home_images_update')->name('update');
+            });
         });
 
     });

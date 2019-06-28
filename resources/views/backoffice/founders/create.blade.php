@@ -26,7 +26,7 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="founder_image">Image</label>
+                    <label for="founder_image">Image (Recommended resolution: 675×675px)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input @error('founder_image') is-invalid @enderror" id="founder_image" name="founder_image" value="{{ old('founder_image') }}">
                         <label class="custom-file-label" for="founder_image">Choose file</label>

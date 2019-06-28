@@ -157,6 +157,19 @@ class ProjectsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $project = Project::find($id);
+        if ($project) {
+            $contents = $project->contents;
+            foreach ($contents as $content) {
+                foreach ($content->columns as $column) {
+                    $column->delete();
+                }
+                $content->delete();
+            }
+            $project->delete();
+            return back()->with('status', 'Project deleted successfuly');
+        }
+
+        abort(404);
     }
 }
