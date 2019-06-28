@@ -71,7 +71,7 @@ h3>strong, h3 b {
     font-weight: bold;
 }
 
-h5>strong {
+h5>strong, h5 b {
     font-weight: bolder;
 }
 
