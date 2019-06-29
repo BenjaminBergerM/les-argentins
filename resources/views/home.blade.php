@@ -73,12 +73,12 @@
         <div class="container d-flex flex-sm-row flex-column align-items-center">
             @foreach ($founders as $founder)                
             <article class="mr-sm-5 mb-5 mb-sm-0">
-                <a href="javascript:void(0)" onclick="openProjectNav('Founder1')" class="d-flex flex-column align-items-center founder">
+                <a href="javascript:void(0)" onclick="openProjectNav('Founder{{ $founder->id }}')" class="d-flex flex-column align-items-center founder">
                     <img width="225px" src="{{ Storage::url($founder->image) }}" class="founder-img" alt="">
                     <h6 class="mt-2">{{ $founder->name }}</h6>
                 </a>
-                <div id="sideNavProjectFounder1" class="sidenav project-sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav('Founder1')">&times;</a>
+                <div id="sideNavProjectFounder{{ $founder->id }}" class="sidenav project-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeProjectNav('Founder{{ $founder->id }}')">&times;</a>
                     <div class="content">
                         <h5><strong>{{ $founder->name }}</strong><h5>
                         <p class="mt-4">{!! $founder->description !!}</p>
