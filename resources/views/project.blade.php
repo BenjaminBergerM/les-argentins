@@ -25,7 +25,7 @@ body { overflow-x: hidden; }
                     <h4>{!! $content->columns[$i]->column !!}</h4>
                     @break
                 @case(2)
-                    <video style="background: transparent url('{{ Storage::url($content->columns[$i]->default) }}') no-repeat 0 0;" class="project-video" poster="{{ Storage::url($content->columns[$i]->default) }}" controls>
+                    <video style="background: black;" class="project-video" poster="{{ Storage::url($content->columns[$i]->default) }}" controls>
                         <source src="{{ Storage::url($content->columns[$i]->column) }}" type="video/mp4">
                     </video>
                     @break
