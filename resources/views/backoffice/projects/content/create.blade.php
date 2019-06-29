@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="column_default_1">Default image (Recommended resolution: 1920x1080px)</label>
+                                <label for="column_default_1">Default image (Recommended aspect ratio: 16:9)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_default_1') is-invalid @enderror" id="column_default_1" name="column_default_1" value="{{ old('column_default_1') }}">
                                     <label class="custom-file-label" for="column_default_1">Choose file</label>
@@ -105,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="column_default_2">Default image (Recommended resolution: 1920x1080px)</label>
+                                    <label for="column_default_2">Default image (Recommended aspect ratio: 16:9)</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input @error('column_default_2') is-invalid @enderror" id="column_default_2" name="column_default_2" value="{{ old('column_default_2') }}">
                                         <label class="custom-file-label" for="column_default_2">Choose file</label>
@@ -155,7 +155,7 @@
                         </div>
                         <div id="video-3" style="display: none;">
                             <div class="form-group">
-                                <label for="column_video_3">Video (Recommended aspect ratio: 16:9, Max size: 10MB)</label>
+                                <label for="column_video_3">Video (Recommended aspect ratio: 16:9, Max size: 100MB)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_video_3') is-invalid @enderror" id="column_video_3" name="column_video_3" value="{{ old('column_video_3') }}">
                                     <label class="custom-file-label" for="column_video_3">Choose file</label>
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="column_default_3">Default image (Recommended resolution: 1920x1080px)</label>
+                                <label for="column_default_3">Default image (Recommended aspect ratio: 16:9)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_default_3') is-invalid @enderror" id="column_default_3" name="column_default_3" value="{{ old('column_default_3') }}">
                                     <label class="custom-file-label" for="column_default_3">Choose file</label>
@@ -181,7 +181,7 @@
                         </div>
                         <div id="image-3" style="display: none;">
                             <div class="form-group">
-                                <label for="column_image_3">Image (Recommended resolution: 1920x1080px)</label>
+                                <label for="column_image_3">Image</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_image_3') is-invalid @enderror" id="column_image_3" name="column_image_3" value="{{ old('column_image_3') }}">
                                     <label class="custom-file-label" for="column_image_3">Choose file</label>
@@ -229,7 +229,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="column_default_4">Default image (Recommended resolution: 1920x1080px)</label>
+                                <label for="column_default_4">Default image (Recommended aspect ratio: 16:9)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_default_4') is-invalid @enderror" id="column_default_4" name="column_default_4" value="{{ old('column_default_4') }}">
                                     <label class="custom-file-label" for="column_default_4">Choose file</label>

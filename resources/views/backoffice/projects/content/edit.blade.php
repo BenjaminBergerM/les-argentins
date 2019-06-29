@@ -34,10 +34,10 @@
                             </div>
                             <div id="video-{{ $var }}" style="display: none;">
                                 <div class="form-group">
-                                    <label for="column_video_{{ $var }}">Video Recommended aspect ratio: 16:9, Max size: 10MB</label>
+                                    <label for="column_video_{{ $var }}">Video (Recommended aspect ratio: 16:9, Max size: 100MB)</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input @error('column_video_'.$var) is-invalid @enderror" id="column_video_{{$var}}" name="column_video_{{$var}}" value="{{ old('column_video_'.$var) }}">
-                                        <label class="custom-file-label" for="column_video_{{$var}}">Choose file</label>
+                                        <label class="custom-file-label" for="column_video_ {{$var}}">Choose file</label>
                                         @error('column_video_'.$var)
                                             <span class="error-label" role="alert">
                                                 <strong>{{ $message }}</strong>
