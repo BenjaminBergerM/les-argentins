@@ -119,6 +119,22 @@ a:hover p { font-weight:bold; }
     object-fit: cover
 }
 
+.project-video {
+    width: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -webkit-background-position:center center;
+    -moz-background-position:center center;
+    -o-background-position:center center;
+    background-position:center center;
+}
+
+.project-video::-webkit-media-controls-panel {
+    background-image: linear-gradient(transparent, transparent) !important; 
+}
+
 .nav-link {
     color: white;
 }

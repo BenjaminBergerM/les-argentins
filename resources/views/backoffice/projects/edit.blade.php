@@ -27,7 +27,7 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="home_background">Home background</label>
+                    <label for="home_background">Home background (Recommended resolution: 1920x1080px)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input @error('home_background') is-invalid @enderror" id="home_background" name="home_background" value="{{ old('home_background') ?? $project->home_background }}">
                         <label class="custom-file-label" for="home_background">Choose file</label>
@@ -48,7 +48,7 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="sidenav_img">Sidenav image</label>
+                    <label for="sidenav_img">Sidenav image (Recommended resolution: 1920x540px)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input @error('sidenav_img') is-invalid @enderror" id="sidenav_img" name="sidenav_img" value="{{ old('sidenav_img') ?? $project->sidenav_img }}">
                         <label class="custom-file-label" for="sidenav_img">Choose file</label>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="project_img">Project image</label>
+                    <label for="project_img">Project image (Recommended resolution: 1920x540px)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input @error('project_img') is-invalid @enderror" id="project_img" name="project_img" value="{{ old('project_img') ?? $project->project_img }}">
                         <label class="custom-file-label" for="project_img">Choose file</label>

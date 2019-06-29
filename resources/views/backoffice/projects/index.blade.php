@@ -36,12 +36,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($projects as $project)
+                    @foreach ($projects->sortBy('order') as $project)
                     <tr>
                         <th scope="row">{{ $project->id }}</th>
                         <td>{{ $project->title }}</td>
                         <td><a target="_blanck" href="{{ env('APP_URL').'/project/'.$project->id }}">{{ env('APP_URL').'/project/'.$project->id }}</a></td>
                         <td>
+                            <a href="{{ route('backoffice.projects.up', $project->id) }}"><i class="fas fa-arrow-up"></i></a>
+                            <a href="{{ route('backoffice.projects.down', $project->id) }}"><i class="fas fa-arrow-down"></i></a>                
                             <a href="{{ route('backoffice.projects.edit', $project->id) }}"><i class="far fa-edit"></i></a>
                             <a href="#" onclick="event.preventDefault(); document.getElementById('project-delete-{{ $project->id }}').submit();">
                                 <i class="far fa-trash-alt"></i>

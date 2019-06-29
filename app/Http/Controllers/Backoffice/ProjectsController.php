@@ -58,6 +58,7 @@ class ProjectsController extends Controller
         $home_text = str_replace('</p>', '', $request->input('home_text'));
         $project->home_text = str_replace('<p>', '', $home_text);
         $project->sidenav_detail = $request->input('sidenav_detail');
+        $project->order = Project::orderBy('order', 'desc')->first()->order + 1;
         
         $home_background = $request->file('home_background');
         $path = $home_background->storeAs('public/projects', uniqid() . '_home_background.'.$home_background->getClientOriginalExtension());
@@ -171,5 +172,35 @@ class ProjectsController extends Controller
         }
 
         abort(404);
+    }
+
+    public function down($id)
+    {
+        $down_project = Project::find($id);
+        if ($down_project) {
+            $up_project = Project::where('id', $id)->where('order', $down_project->order+1)->first();
+            if ($up_project) {
+                $up_project->order--;
+                $up_project->save();
+            }
+            $down_project->order++;
+            $down_project->save();
+        }
+        return back();
+    }
+
+    public function up($id)
+    {
+        $down_project = Project::find($id);
+        if ($down_project) {
+            $up_project = Project::where('id', $id)->where('order', $down_project->order-1)->first();
+            if ($up_project) {
+                $up_project->order++;
+                $up_project->save();
+            }
+            $down_project->order--;
+            $down_project->save();
+        }
+        return back();
     }
 }

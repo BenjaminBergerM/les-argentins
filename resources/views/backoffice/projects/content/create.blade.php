@@ -31,7 +31,7 @@
                         </div>
                         <div id="video-1" style="display: none;">
                             <div class="form-group">
-                                <label for="column_video_1">Video</label>
+                                <label for="column_video_1">Video (Recommended aspect ratio: 16:9, Max size: 10MB)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_video_1') is-invalid @enderror" id="column_video_1" name="column_video_1" value="{{ old('column_video_1') }}">
                                     <label class="custom-file-label" for="column_video_1">Choose file</label>
@@ -93,7 +93,7 @@
                             </div>
                             <div id="video-2" style="display: none;">
                                 <div class="form-group">
-                                    <label for="column_video_2">Video</label>
+                                    <label for="column_video_2">Video (Recommended aspect ratio: 16:9, Max size: 10MB)</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input @error('column_video_2') is-invalid @enderror" id="column_video_2" name="column_video_2" value="{{ old('column_video_2') }}">
                                         <label class="custom-file-label" for="column_video_2">Choose file</label>
@@ -155,7 +155,7 @@
                         </div>
                         <div id="video-3" style="display: none;">
                             <div class="form-group">
-                                <label for="column_video_3">Video</label>
+                                <label for="column_video_3">Video (Recommended aspect ratio: 16:9, Max size: 10MB)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_video_3') is-invalid @enderror" id="column_video_3" name="column_video_3" value="{{ old('column_video_3') }}">
                                     <label class="custom-file-label" for="column_video_3">Choose file</label>
@@ -217,7 +217,7 @@
                         </div>
                         <div id="video-4" style="display: none;">
                             <div class="form-group">
-                                <label for="column_video_4">Video</label>
+                                <label for="column_video_4">Video (Recommended aspect ratio: 16:9, Max size: 10MB)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('column_video_4') is-invalid @enderror" id="column_video_4" name="column_video_4" value="{{ old('column_video_4') }}">
                                     <label class="custom-file-label" for="column_video_4">Choose file</label>

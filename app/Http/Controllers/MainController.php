@@ -27,7 +27,7 @@ class MainController extends Controller
         $contact_image = Setting::where('key', 'contact_image')->first();
         $contact_image_responsive = Setting::where('key', 'contact_image_responsive')->first();
 
-        $projects = Project::where('lang', Session::get('lang'))->get();
+        $projects = Project::where('lang', Session::get('lang'))->orderBy('order', 'asc')->get();
         $founders = Founder::where('lang', Session::get('lang'))->get();
         $contacts = Contact::where('lang', Session::get('lang'))->get();
 

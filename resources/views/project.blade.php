@@ -16,7 +16,7 @@ body { overflow-x: hidden; }
     <h1 class="mt-1 mt-sm-0 mb-sm-4">{{ $project->title }}</h1>
 </section>
 @foreach ($project->contents->sortBy('order') as $content)
-<section class="mt-2 mt-sm-5 porject-box-1 container">
+<section class="mt-2 mt-sm-5 porject-box-1 {{ ($content->columns->filter(function($item) { return $item->type == 1; })->count() >= 1) ? 'container' : '' }}">
     <div class="row">
         @for ($i = 0; $i < $content->columns->count(); $i++)
         <article class="col-sm-{{ 12 / $content->columns->count() }}">
@@ -25,7 +25,7 @@ body { overflow-x: hidden; }
                     <h4>{!! $content->columns[$i]->column !!}</h4>
                     @break
                 @case(2)
-                    <video style="width: 100%" poster="{{ Storage::url($content->columns[$i]->default) }}" controls>
+                    <video style="background: transparent url('{{ Storage::url($content->columns[$i]->default) }}') no-repeat 0 0;" class="project-video" poster="{{ Storage::url($content->columns[$i]->default) }}" controls>
                         <source src="{{ Storage::url($content->columns[$i]->column) }}" type="video/mp4">
                     </video>
                     @break

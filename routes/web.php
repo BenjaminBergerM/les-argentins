@@ -29,6 +29,8 @@ Route::prefix('backoffice')->group(function() {
             Route::get('/{id}/edit', 'Backoffice\ProjectsController@edit')->name('edit');
             Route::put('/{id}/update', 'Backoffice\ProjectsController@update')->name('update');
             Route::delete('/{id}/destroy', 'Backoffice\ProjectsController@destroy')->name('destroy');
+            Route::get('/{id}/up', 'Backoffice\ProjectsController@up')->name('up');
+            Route::get('/{id}/down', 'Backoffice\ProjectsController@down')->name('down');
             Route::prefix('/{project_id}/content')->name('contents.')->group(function() {
                 Route::get('/', 'Backoffice\ContentController@index')->name('index');
                 Route::get('/create', 'Backoffice\ContentController@create')->name('create');
@@ -94,12 +96,12 @@ Route::prefix('backoffice')->group(function() {
 //     return 'Done!';
 // });
 
-// Route::get('migrate', function() {
-//     Artisan::call('migrate');
-//     return 'Done!';
-// });
-
-Route::get('seed', function() {
-    Artisan::call('db:seed');
+Route::get('migrate', function() {
+    Artisan::call('migrate');
     return 'Done!';
 });
+
+// Route::get('seed', function() {
+//     Artisan::call('db:seed');
+//     return 'Done!';
+// });

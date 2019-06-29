@@ -112,7 +112,7 @@ class ContentController extends Controller
 
         $content = new Content();
         $content->project_id = $project_id;
-        $content->order = $project->contents->count() + 1;
+        $content->order = Content::where('project_id', $project_id)->orderBy('order', 'desc')->first()->order + 1;
         $content->save();
 
         for ($i=0; $i < count($column_types); $i++) {
@@ -322,12 +322,11 @@ class ContentController extends Controller
         if ($down_content) {
             $up_content = Content::where('project_id', $project_id)->where('order', $down_content->order+1)->first();
             if ($up_content) {
-
                 $up_content->order--;
                 $up_content->save();
-                $down_content->order++;
-                $down_content->save();
             }
+            $down_content->order++;
+            $down_content->save();
         }
         return back();
     }
@@ -340,9 +339,9 @@ class ContentController extends Controller
             if ($up_content) {
                 $up_content->order++;
                 $up_content->save();
-                $down_content->order--;
-                $down_content->save();
             }
+            $down_content->order--;
+            $down_content->save();
         }
         return back();
     }
