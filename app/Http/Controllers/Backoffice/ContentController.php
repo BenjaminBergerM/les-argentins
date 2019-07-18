@@ -112,7 +112,12 @@ class ContentController extends Controller
 
         $content = new Content();
         $content->project_id = $project_id;
-        $content->order = Content::where('project_id', $project_id)->orderBy('order', 'desc')->first()->order + 1;
+        $last = Content::where('project_id', $project_id)->orderBy('order', 'desc')->first();
+        if ($last) {
+            $content->order = $last->order + 1;
+        } else {
+            $content->order = 0;
+        }
         $content->save();
 
         for ($i=0; $i < count($column_types); $i++) {
